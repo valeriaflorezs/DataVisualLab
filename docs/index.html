@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data & Visual Lab — Aprende. Visualiza. Impacta.</title>
+  <meta name="description" content="Empoderamos a estudiantes, docentes y emprendedores de Barranquilla con análisis de datos, diseño visual y formación práctica." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container header-grid">
+      <a class="logo" href="#">
+        <img src="assets/logo_base.png" alt="Data & Visual Lab — logo">
+      </a>
+
+      <nav id="navMenu" class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#pricing">Tarifas</a></li>
+          <li><a href="#portfolio">Casos</a></li>
+          <li><a href="#workshops">Talleres</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div id="headerActions" class="header-actions">
+        <a class="btn btn-ghost" href="#contact">Contacto</a>
+        <a class="btn btn-primary" href="https://calendar.app.google/QJ4Td8BiKXitHTmA9" target="_blank" rel="noopener">Agenda asesoría (20 min)</a>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Data & Visual Lab</p>
+          <h1 id="hero-title">Transformamos Datos en Soluciones Visuales que Impactan</h1>
+          <p class="lead">Empoderamos a estudiantes, docentes y emprendedores de Barranquilla con análisis de datos, diseño visual y formación práctica.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://calendar.app.google/QJ4Td8BiKXitHTmA9" target="_blank" rel="noopener">Agenda tu Asesoría Gratuita (20 min)</a>
+            <a class="btn btn-outline" href="#services">Ver Servicios</a>
+          </div>
+
+          <div class="trust">
+            <div><strong class="count" data-target="120">0</strong><span>Proyectos</span></div>
+            <div><strong>5★</strong><span>Calificación promedio</span></div>
+            <div><strong>Workshops</strong><span>Universidades locales</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <!-- mockup / animated dashboard -->
+          <div class="mockup">
+            <img src="assets/ilustracion.png" alt="Mockup de dashboard" loading="lazy">
+            <svg class="decor-hex" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7d70ba"/><stop offset="1" stop-color="#00afb5"/></linearGradient></defs>
+              <polygon points="100,10 170,50 170,130 100,170 30,130 30,50" fill="url(#g1)" opacity="0.12" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA + SOLUCION -->
+    <section class="problems" id="problems" aria-labelledby="problems-title">
+      <div class="container">
+        <h2 id="problems-title">Los problemas que resolvemos</h2>
+        <p class="section-sub">Conectamos con tus dolores y entregamos soluciones prácticas.</p>
+
+        <div class="cards-grid">
+          <article class="card alt">
+            <i class="fa-solid fa-database fa-2x"></i>
+            <h3>Mis datos son un desorden</h3>
+            <p>Organizamos y transformamos tu información en insights accionables y limpios.</p>
+            <a class="link-cta" href="#contact">Cuéntanos tu Desafío</a>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-chart-column fa-2x"></i>
+            <h3>Mis presentaciones son aburridas</h3>
+            <p>Diseñamos dashboards y presentaciones con impacto visual y estructura narrativa.</p>
+            <a class="link-cta" href="#portfolio">Ver ejemplos</a>
+          </article>
+
+          <article class="card alt">
+            <i class="fa-solid fa-book-open-reader fa-2x"></i>
+            <h3>Necesito aprender estas herramientas</h3>
+            <p>Talleres prácticos en Power BI, Excel, Canva y Notion, con enfoque aplicado.</p>
+            <a class="link-cta" href="#workshops">Próximos talleres</a>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-rocket fa-2x"></i>
+            <h3>Quiero que mi emprendimiento destaque</h3>
+            <p>Materiales visuales profesionales para que tus presentaciones y propuestas brillen.</p>
+            <a class="link-cta" href="#services">Solicitar consultoría</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Nuestros Servicios</h2>
+        <p class="section-sub">Soluciones adaptadas a cada etapa de tu proyecto</p>
+
+        <div class="service-grid">
+          <!-- Card 1 -->
+          <div class="service">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h3>Explora Digital</h3>
+            <p class="muted">Introducción guiada a herramientas digitales.</p>
+            <p class="tag">Ideal para: Principiantes</p>
+            <p class="price">Desde <strong>$25.000 COP</strong></p>
+            <button class="btn btn-secondary js-more" data-service="Explora Digital">Saber más</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Visualiza tu Proyecto</h3>
+            <p class="muted">Diseño visual para presentaciones académicas.</p>
+            <p class="tag">Ideal para: Exposiciones</p>
+            <p class="price">Desde <strong>$40.000 COP</strong></p>
+            <button class="btn btn-secondary js-more" data-service="Visualiza tu Proyecto">Saber más</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Dashboard Académico</h3>
+            <p class="muted">Dashboards profesionales interactivos.</p>
+            <p class="tag">Ideal para: Tesis/Investigaciones</p>
+            <p class="price">Desde <strong>$60.000 COP</strong></p>
+            <button class="btn btn-secondary js-more" data-service="Dashboard Académico">Saber más</button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h3>Domina la Herramienta</h3>
+            <p class="muted">Tutoría 1:1 personalizada.</p>
+            <p class="tag">Ideal para: Dominio técnico</p>
+            <p class="price">Desde <strong>$30.000 COP</strong></p>
+            <button class="btn btn-secondary js-more" data-service="Domina la Herramienta">Saber más</button>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Data Fácil</h3>
+            <p class="muted">Análisis + visualización de datos.</p>
+            <p class="tag">Ideal para: Estadísticas/Encuestas</p>
+            <p class="price">Desde <strong>$60.000 COP</strong></p>
+            <button class="btn btn-secondary js-more" data-service="Data Fácil">Saber más</button>
+          </div>
+
+          <!-- CTA card -->
+          <div class="service cta">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Sesión Exploratoria</h3>
+            <p class="muted">20 minutos gratuitos para conocerte y proponer una solución.</p>
+            <a class="btn btn-primary" href="https://calendar.app.google/QJ4Td8BiKXitHTmA9" target="_blank" rel="noopener">Agenda gratis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title">Trabajar juntos es fácil</h2>
+        <p class="section-sub">Tres pasos claros para empezar.</p>
+
+        <div class="timeline">
+          <div class="step">
+            <div class="icon">💬</div>
+            <h3>1 — Conversemos</h3>
+            <p>Agenda una consulta gratuita de 20 min. Conocemos tu proyecto y objetivos.</p>
+          </div>
+
+          <div class="connector" aria-hidden="true"></div>
+
+          <div class="step">
+            <div class="icon">📋</div>
+            <h3>2 — Propuesta Personalizada</h3>
+            <p>Plan con tiempos y costos claros, entregables definidos.</p>
+          </div>
+
+          <div class="connector" aria-hidden="true"></div>
+
+          <div class="step">
+            <div class="icon">🚀</div>
+            <h3>3 — Entrega con Impacto</h3>
+            <p>Proyecto terminado + capacitación para que lo uses con confianza.</p>
+          </div>
+        </div>
+
+        <div class="center-cta">
+          <a class="btn btn-primary" href="#contact">Comenzar Ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Inversión Clara, Resultados Garantizados</h2>
+        <p class="section-sub">Tarifas flexibles según la complejidad de tu proyecto</p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Asesoría individual (1h)</h3>
+            <ul>
+              <li>Básico — $25.000</li>
+              <li>Intermedio — $35.000</li>
+              <li>Avanzado — $45.000</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Diseño visual</h3>
+            <ul>
+              <li>Desde $40.000</li>
+              <li>Intermedio Desde $60.000</li>
+              <li>Avanzado Desde $80.000</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Dashboards</h3>
+            <ul>
+              <li>Desde $60.000</li>
+              <li>Intermedio Desde $90.000</li>
+              <li>Avanzado Desde $120.000</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Tratamiento de datos</h3>
+            <ul>
+              <li>Desde $60.000</li>
+              <li>Intermedio Desde $75.000</li>
+              <li>Avanzado Desde $100.000</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="muted small">Descuentos disponibles para estudiantes y paquetes recurrentes. ¿Necesitas cotización personalizada? <a href="#contact">Solicítala aquí</a>.</p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
+    <div class="container">
+        <h2 id="portfolio-title">Proyectos que hablan por nosotros</h2>
+        <p class="section-sub">Dashboards, reportes y visualizaciones — datos anonimizados</p>
+
+        <div class="masonry-grid">
+        <!-- Proyecto 1 -->
+        <button class="portfolio-item"
+            data-img="assets/portfolio/portfolio1.png"
+            data-type="Empresa de servicios"
+            data-tool="Power BI"
+            data-desc="Dashboard interactivo para el seguimiento de PQRS (Peticiones, Quejas, Reclamos y Sugerencias). Permite analizar tiempos de respuesta y niveles de satisfacción del cliente.">
+            <img src="assets/portfolio/portfolio1_thumb.png" alt="Dashboard PQRS Power BI" loading="lazy">
+            <div class="overlay"><strong>PQRS Empresa</strong><span>Power BI</span></div>
+        </button>
+
+        <!-- Proyecto 2 -->
+        <button class="portfolio-item"
+            data-img="assets/portfolio/portfolio2.png"
+            data-type="Finanzas personales"
+            data-tool="Excel"
+            data-desc="Reporte automatizado de finanzas personales en Excel. Incluye control de ingresos, gastos, ahorro y visualización mensual del balance.">
+            <img src="assets/portfolio/portfolio2_thumb.png" alt="Reporte de finanzas personales Excel" loading="lazy">
+            <div class="overlay"><strong>Finanzas personales</strong><span>Excel</span></div>
+        </button>
+
+        <!-- Proyecto 3 -->
+        <button class="portfolio-item"
+            data-img="assets/portfolio/portfolio3.png"
+            data-type="Análisis de rentabilidad"
+            data-tool="Power BI"
+            data-desc="Dashboard corporativo para analizar la utilidad por línea de producto y márgenes de rentabilidad. Facilita la toma de decisiones estratégicas.">
+            <img src="assets/portfolio/portfolio3_thumb.png" alt="Dashboard de utilidad Power BI" loading="lazy">
+            <div class="overlay"><strong>Utilidad empresa</strong><span>Power BI</span></div>
+        </button>
+        </div>
+    </div>
+    </section>
+
+      <!-- Portfolio Modal -->
+      <div id="portfolioModal" class="modal" aria-hidden="true" role="dialog" aria-describedby="modalDesc">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+          <img id="modalImage" src="" alt="">
+          <div class="modal-info">
+            <h3 id="modalType"></h3>
+            <p id="modalTool" class="muted"></p>
+            <p id="modalDesc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="tools" id="tools" aria-labelledby="tools-title">
+      <div class="container">
+        <h2 id="tools-title">Tecnologías que usamos</h2>
+        <p class="section-sub">Herramientas y nivel de dominio</p>
+
+        <ul class="tools-grid">
+          <li><img src="assets/icons/excel.svg" alt="Excel">Excel</li>
+          <li><img src="assets/icons/powerbi.svg" alt="PowerBI">Power BI</li>
+          <li><img src="assets/icons/canva.svg" alt="Canva">Canva</li>
+          <li><img src="assets/icons/notion.svg" alt="Notion">Notion</li>
+          <li><img src="assets/icons/python.svg" alt="Python">Python</li>
+          <li><img src="assets/icons/java.svg" alt="Java">Java</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORKSHOPS -->
+    <section id="workshops" class="workshops" aria-labelledby="workshops-title">
+      <div class="container">
+        <h2 id="workshops-title">Aprende en comunidad</h2>
+        <p class="section-sub">Talleres prácticos y bootcamps próximos</p>
+
+        <div class="events">
+          <article class="event-card">
+            <h3>Bootcamp Power BI — Nivel Básico</h3>
+            <p class="muted">Fecha: 18 Nov 2025 • Duración: 4 horas • $30.000 COP</p>
+            <p>80% práctico: construcción de dashboard, filtros y storytelling.</p>
+            <a class="btn btn-outline" href="#contact">Inscribirme</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Taller: Visualización con Canva</h3>
+            <p class="muted">Fecha: 28 Nov 2025 • 2 horas • $20.000 COP</p>
+            <p>Diseña posters e infografías listos para presentar.</p>
+            <a class="btn btn-outline" href="#contact">Inscribirme</a>
+          </article>
+        </div>
+
+        <div class="newsletter">
+          <p>Recibe fechas de nuevos talleres</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletterEmail" name="email" placeholder="Tu email" required>
+            <button type="submit" class="btn btn-primary">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- FAQ -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Preguntas Frecuentes</h2>
+
+        <div class="accordion">
+          <button class="accordion-item">
+            <span>¿Cuánto tiempo toma un proyecto típico?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="panel">Depende del alcance: una asesoría rápida 1-2 días, dashboards 1-3 semanas.</div>
+          </button>
+
+          <button class="accordion-item">
+            <span>¿Ofrecen descuentos para estudiantes?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="panel">Sí — aplicamos tarifas especiales para estudiantes y proyectos académicos.</div>
+          </button>
+
+          <button class="accordion-item">
+            <span>¿Las sesiones son presenciales u online?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="panel">Ambas modalidades: nos adaptamos a tus necesidades.</div>
+          </button>
+
+          <!-- add more -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+        <!-- Columna izquierda -->
+        <div class="contact-info">
+        <h2>¿Listo para transformar tus datos?</h2>
+        <p>Agenda tu consulta gratuita de 20 minutos hoy mismo</p>
+
+        <ul>
+            <li>📱 <a href="http://wa.link/b8gb55" target="_blank">WhatsApp</a></li>
+            <li>📧 datavisualab@gmail.com</li>
+            <li>📍 Barranquilla, Colombia (servicios online LATAM)</li>
+        </ul>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="contact-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeD7nQBad4S24P567fKD4qJr6xMlcr4HPsBRSvwpykz-ywWLw/viewform?embedded=true"
+                frameborder="0" marginheight="0" marginwidth="0"
+                allowfullscreen
+                loading="lazy"></iframe>
+        </div>
+    </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="whatsapp-floating" href="http://wa.link/b8gb55" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo_base.png" alt="Data & Visual Lab">
+        <p>© <span id="year"></span> Data & Visual Lab. Barranquilla, Colombia.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
+        <ul>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#pricing">Tarifas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://instagram.com/datavisuallab" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram </a>
+        <a href="mailto:datavisuallab@gmail.com"><i class="fas fa-envelope"></i> Email </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
